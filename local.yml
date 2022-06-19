@@ -7,3 +7,18 @@
     - name: "print"
       debug:
         msg: "Hello World"
+
+    - name: "update apt packages."
+      become: true
+      apt:
+        update_cache: true
+
+    - name: "upgrade packages"
+      become: true
+      apt:
+        name: "*"
+        state: latest
+
+    - name: "install htop"
+      package:
+        name: htop
