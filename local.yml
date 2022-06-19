@@ -19,6 +19,10 @@
         name: "*"
         state: latest
 
-    - name: "install htop"
+    - name: "install stuff"
       package:
-        name: htop
+        name: 
+          - htop
+          - tmux
+          - vim-nox
+          - python3-psutil
