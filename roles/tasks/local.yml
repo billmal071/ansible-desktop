@@ -1,0 +1,8 @@
+---
+- name: "install stuff"
+  package:
+    name:
+      - htop
+      - tmux
+      - vim-nox
+      - python3-psutil

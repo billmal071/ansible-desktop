@@ -1,0 +1,7 @@
+---
+- name: "install cron job for ansible pull"
+  cron:
+    user: ansible
+    name: "ansible_provision"
+    minute: "*/10"
+    job: "/usr/bin/ansible-pull -o -U https://github.com/billmal071/ansible-desktop.git"
